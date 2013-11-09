@@ -5,7 +5,12 @@ class BourbonWhiskeysController < ApplicationController
     @bourbon = BourbonWhiskey.random
   end
 
-	def edit
+	def like
+    
+    redirect_to root_url
+  end
+
+  def hate
     redirect_to root_url
   end
 end

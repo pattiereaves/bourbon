@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131109181642) do
+ActiveRecord::Schema.define(version: 20131109181957) do
 
   create_table "attribute_types", force: true do |t|
     t.datetime "created_at"
@@ -54,22 +54,15 @@ ActiveRecord::Schema.define(version: 20131109181642) do
 
   create_table "hates", force: true do |t|
     t.integer  "user_id"
-    t.integer  "attribute_id"
+    t.integer  "bourbon_attribute_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "likes", force: true do |t|
     t.integer  "user_id"
-    t.integer  "attribute_id"
+    t.integer  "bourbon_attribute_id"
     t.boolean  "is_loved"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "user_flavors", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "flavor_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

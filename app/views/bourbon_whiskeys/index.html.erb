@@ -12,12 +12,14 @@
 	</div>
 	<div class="vote">
 		<div class="yes option">
-			<a>Yes</a>
+			<%= link_to "Yes", like_bourbon_whiskey_path(@bourbon), method: "post" %>
 		</div>
 		<div class="no option">
-			<a>No</a>
+			<%= link_to "No", hate_bourbon_whiskey_path(@bourbon), method: "post" %>
 		</div>
-		<div class="skip"><a>skip it</a></div>
+		<div class="skip">
+			<%= link_to "skip it", root_path %>
+		</div>
 	</div><!-- /.yes-->
 
 </section>
