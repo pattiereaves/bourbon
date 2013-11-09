@@ -16,18 +16,18 @@ $yellow: rgb(234,174,96);
 $cream: rgb(248,247,211);
 $maroon: rgb(66,19,20);
 
-$sansfont: 'ralewayextrabold', sans-serif;
-$sansthin: 'ralewaythin', sans-serif;
+$sansfont: 'ralewayheavy', sans-serif;
+$sansthin: 'ralewaymedium', sans-serif;
 $seriffont:  'prociono_ttregular', serif;
 
 
  html {
- 	font: 16px/24px 'ralewaythin', sans-serif;
+ 	font: normal 16px/24px $sansthin;
  	background: url('background-19.png') repeat;
  }
 
- h1,h2,h3,h4,h5,h6 {
- 	font-family: 'prociono_ttregular', serif;
+ h1,h2,h3,h4,h5,h6 { 
+ 	font-family: $seriffont;
  	margin: .5em 0;
  }
 
@@ -37,6 +37,9 @@ $seriffont:  'prociono_ttregular', serif;
 	font-weight: bold;
  	text-transform: uppercase;
  	font-size: 2em;
+ 	background: url('topper.svg') no-repeat center center;
+ 	background-size: contain;
+ 	text-indent: -99999px;
 }
 
 h1 {
@@ -114,7 +117,7 @@ background-position: center center;
 .skip a:hover {background: none;}
 
 dt {
-	font-family: $sansfont;
+	font: normal 1.5em/1.5em $sansfont;
 	color: $yellow;
 	text-transform: uppercase;
 	margin: .5em 0;
@@ -169,3 +172,4 @@ dd:last-child {
 	padding-top: 4em;
 	background: url('ornament.svg') no-repeat top center;
 }
+
