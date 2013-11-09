@@ -56,10 +56,17 @@ h1 {
 }
 
 .wrapper {
+<<<<<<< HEAD
   margin: 5%;
   border: 1px solid #ccc;
   padding: 5%;
   text-align: center;
+=======
+	margin: 5%;
+	border: 1px solid $cream;
+	padding: 5%;
+	text-align: center;
+>>>>>>> ca276cca92e5841ba17c487a62dea4b67f8d9ccf
 }
 
 .wrapper li {display: inline-block;}

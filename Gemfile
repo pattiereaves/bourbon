@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -32,11 +29,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development do
-  gem "guard", "~> 2.2.3"
-  gem "guard-livereload", "~> 2.0.0", require: false
-end
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -48,3 +40,15 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development, :test do
+  gem "guard", "~> 2.2.3"
+  gem "guard-livereload", "~> 2.0.0", require: false
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'unicorn'
+end
+
+ruby "2.0.0"
