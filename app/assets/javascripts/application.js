@@ -19,6 +19,9 @@
 $(function() {
   $('.bourbon-info > p').css('display', 'none');
 
+  
+
+
   $('.info').on("click", function() {
 
   	if($(this).hasClass('hide')) {
