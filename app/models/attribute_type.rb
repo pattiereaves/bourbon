@@ -1,3 +1,3 @@
 class AttributeType < ActiveRecord::Base
-  has_many :attributes
+  has_many :bourbon_attributes
 end
