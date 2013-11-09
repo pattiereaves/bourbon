@@ -22,7 +22,6 @@ end
 puts "Attribute Type and BourbonAttributes added!"
 
 
-
 require 'csv'
 
   csv_file_path = 'db/bourbons.csv'
@@ -52,7 +51,7 @@ require 'csv'
       bourbon_aromas = row[6].split(',')
       bourbon_aromas.each do |val|
         val.strip!
-        type_aroma = AttributeType.find_by_name("aroma");
+        type_aroma = AttributeType.find_by_name("aroma")
         b_attributes = BourbonAttribute.where("name = ? AND attribute_type_id = ?", val, type_aroma.id).first
         bourbon_whiskey.bourbon_profiles.create({bourbon_attribute: b_attributes})
       end
@@ -62,9 +61,9 @@ require 'csv'
       bourbon_tastes = row[8].split(',')
       bourbon_tastes.each do |val|
         val.strip!
-        type_taste = AttributeType.find_by_name("taste");
+        type_taste = AttributeType.find_by_name("taste")
         b_attributes = BourbonAttribute.where("name = ? AND attribute_type_id = ?", val, type_taste.id).first
-        bourbon_whiskey.bourbon_profiles.create({bourbon_attribute_id: b_attributes})
+        bourbon_whiskey.bourbon_profiles.create({bourbon_attribute: b_attributes})
       end
       puts "Taste profiles " +  row[8] + " added!"
 
@@ -72,9 +71,9 @@ require 'csv'
       bourbon_finishes = row[10].split(',')
       bourbon_finishes.each do |val|
         val.strip!
-        type_finish = AttributeType.find_by_name("finish");
+        type_finish = AttributeType.find_by_name("finish")
         b_attributes = BourbonAttribute.where("name = ? AND attribute_type_id = ?", val, type_finish.id).first
-        bourbon_whiskey.bourbon_profiles.create({bourbon_attribute_id: b_attributes})
+        bourbon_whiskey.bourbon_profiles.create({bourbon_attribute: b_attributes})
       end
 
       puts "Finish profiles " +  row[10] + " added!"
