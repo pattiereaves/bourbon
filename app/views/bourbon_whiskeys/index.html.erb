@@ -7,7 +7,7 @@
 	<div class="bourbon-info">
 		<a class="info">info</a>
 		<p>
-			The base aroma is buttered corn-on-the-cob with aeration bringing additional scents of vanilla and cinnamon. The palate entry showcases sweet breakfast cereal grain; at midpalate the corn dominates so thoroughly that you know that this could only be one of the best straight bourbons from Kentucky. Ends spirity and heated. One of America’s benchmark spirits.
+			<%= @bourbon.appearance %>
 		</p>
 	</div>
 	<div class="vote">
@@ -27,22 +27,22 @@
 
 
 <section class="wrapper description">
-	<h1>Woodford Double Oak Bourbon</h1>
+	<h1><%= @bourbon.name %></h1>
 		<dl>
-			<dt class="color">Color</dt>
+<!-- 			<dt class="color">Color</dt>
 			<dd>Deep</dd>
-
+ -->
 			<dt class="aroma">Aroma</dt>
-			<dd>Huge wafts of butterscotch and toffee with a bit of heady molasses</dd>
+			<dd><%= @bourbon.aroma_description %></dd>
 
-			<dt class="entry">Entry</dt>
-			<dd>Butterscotch, vanilla, and toffee notes at the front of the palate, evenually giving way to cinnamon, clove and rum raisin.</dd>
+<!-- 			<dt class="entry">Entry</dt>
+			<dd>Butterscotch, vanilla, and toffee notes at the front of the palate, evenually giving way to cinnamon, clove and rum raisin.</dd> -->
 
 			<dt class="finish">Finish</dt>
-			<dd>Flavors of butterscotch to their best to tone down the lingering bitterness. Moderate length with ample warmth.</dd>
+			<dd><%= @bourbon.finish_description %></dd>
 
 			<dt class="strength">Strength</dt>
-			<dd>90 Proof</dd>
+			<dd><%= @bourbon.proof %> Proof</dd>
 		</dl>
 </section>
 

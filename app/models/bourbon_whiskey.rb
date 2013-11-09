@@ -6,10 +6,19 @@ class BourbonWhiskey < ActiveRecord::Base
 
   validates :distillery, presence: true
 
-  def self.random
+  def self.random(user)
     # TODO: Set up random properly, avoid active record relation bug
-    # return limit(1).order("RANDOM()")
     
-    first
+    # I know this is bad, but this is Jazz
+    if user && user.likes
+      # find bourbon where attributes are in the users Bourbon profle
+      # 
+      everything = user.likes.first.bourbon_attribute.bourbon_whiskeys
+      # everything = joins(:bourbon_attributes, :bourbon_profiles).where(user_id: user.id)
+    else
+      everything = all
+    end
+
+    everything[rand(everything.count)]
   end
 end
