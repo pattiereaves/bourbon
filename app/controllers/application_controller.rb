@@ -8,6 +8,11 @@ class ApplicationController < ActionController::Base
   def ensure_user_exists
     if session[:user]
       @user = User.find(session[:user])
+
+      unless @user
+        @user = User.create
+        session[:user] = @user.id
+      end
     else
       @user = User.create
       session[:user] = @user.id
