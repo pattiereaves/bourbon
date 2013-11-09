@@ -13,7 +13,11 @@
  */
 
  html {
- 	font: 16px/24px sans-serif;
+ 	font: 16px/24px 'ralewaythin', sans-serif;
+ }
+
+ h1,h2,h3,h4,h5,h6 {
+ 	font-family: 'prociono_ttregular', serif;
  }
 
 .wrapper {
@@ -22,6 +26,8 @@
 	padding: 5%;
 	text-align: center;
 }
+
+.wrapper li {display: inline-block;}
 
 .bourbon-image {
 	width: 90%;
