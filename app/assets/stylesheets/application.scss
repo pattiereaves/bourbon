@@ -13,12 +13,17 @@
  */
 
 $yellow: rgb(234,174,96);
+$cream: rgb(248,247,211);
+$maroon: rgb(66,19,20);
+
 $sans: 'ralewaythin', sans-serif;
 $serif:  'prociono_ttregular', serif;
 
 
+
  html {
  	font: 16px/24px 'ralewaythin', sans-serif;
+ 	background: url('background-19.png') repeat;
  }
 
  h1,h2,h3,h4,h5,h6 {
@@ -31,6 +36,8 @@ $serif:  'prociono_ttregular', serif;
 	font-weight: bold;
  	text-transform: uppercase;
 }
+
+h1 {color: $cream;}
 
 .wrapper {
 	margin: 5%;
@@ -64,9 +71,11 @@ $serif:  'prociono_ttregular', serif;
 	font-weight: bold;
 	width: 100%;
 	display: inline-block;
-	background: #ccc;
 	padding: 5% 0;
 }
+.yes a {background: $cream;}
+.no a {background: $maroon;}
+
 .vote a:hover {
 	background: #aaa;
 }
