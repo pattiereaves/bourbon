@@ -48,7 +48,7 @@ group :development, :test do
 end
 group :production do
   gem 'pg'
-  gem 'unicorn'
+  # gem 'unicorn'
 end
 
 ruby "2.0.0"
