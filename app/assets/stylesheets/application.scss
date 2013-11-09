@@ -9,9 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ * require_tree .
  */
 
+@import "fonts";
 
 $yellow: rgb(234,174,96);
 $cream: rgb(248,247,211);
@@ -22,9 +23,19 @@ $sansthin: 'ralewaymedium', sans-serif;
 $seriffont:  'prociono_ttregular', serif;
 
 
- html {
+ body, html {
   font: normal 16px/24px $sansthin;
-  background: url('background-19.png') repeat;
+  background:#000 url(background-19.png) repeat center center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  &:after, &:before{
+    display: table;
+  }
+  &:after{
+    clear:both;
+  }
  }
 
  h1,h2,h3,h4,h5,h6 { 
@@ -56,7 +67,7 @@ h1 {
 }
 
 .wrapper {
-	margin: 5%;
+	// margin: 5%;
 	border: 1px solid $cream;
 	padding: 5%;
 	text-align: center;
@@ -141,7 +152,7 @@ dd:last-child {
 }
 
 .description .color {
-  background: url('Color.svg') no-repeat;
+  background: url(Color.svg) no-repeat;
   background-size: 1em auto;
   background-position: center bottom;
 }
