@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131109151623) do
+ActiveRecord::Schema.define(version: 20131109160007) do
 
   create_table "attribute_types", force: true do |t|
     t.datetime "created_at"
@@ -31,6 +31,12 @@ ActiveRecord::Schema.define(version: 20131109151623) do
     t.integer  "distillery_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "age"
+    t.integer  "proof"
+    t.text     "appearance"
+    t.text     "aroma_description"
+    t.text     "taste_description"
+    t.text     "finish_description"
   end
 
   create_table "distilleries", force: true do |t|
