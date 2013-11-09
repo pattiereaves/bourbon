@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   def ensure_user_exists
     if session[:user]
-      @user = User.find(session[:user])
+      @user = User.find_by_id(session[:user])
 
       unless @user
         @user = User.create
