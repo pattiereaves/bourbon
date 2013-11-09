@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Kentucky Bourbon Finder</title>
-  <%= stylesheet_link_tag "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+$yellow: rgb(234,174,96);
+$cream: rgb(248,247,211);
+$maroon: rgb(66,19,20);
 
-<style>
-html {
+$sansfont: 'ralewayheavy', sans-serif;
+$sansthin: 'ralewaymedium', sans-serif;
+$seriffont:  'prociono_ttregular', serif;
+
+
+ html {
  	font: normal 16px/24px $sansthin;
  	background: url('background-19.png') repeat;
  }
@@ -159,12 +159,3 @@ dd:last-child {
 	background: url('ornament.svg') no-repeat top center;
 }
 
-</style>
-
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-</html>

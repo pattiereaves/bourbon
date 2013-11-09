@@ -10,10 +10,10 @@ class BourbonWhiskey < ActiveRecord::Base
     # TODO: Set up random properly, avoid active record relation bug
     
     # I know this is bad, but this is Jazz
-    if user && user.likes
+    if user && user.likes.nil?
       # find bourbon where attributes are in the users Bourbon profle
       # 
-      everything = user.likes.first.bourbon_attribute.bourbon_whiskeys
+      everything = user.likes.first.bourbon_attributes.bourbon_whiskeys
       # everything = joins(:bourbon_attributes, :bourbon_profiles).where(user_id: user.id)
     else
       everything = all
