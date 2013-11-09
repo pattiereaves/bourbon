@@ -11,13 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131109053246) do
+ActiveRecord::Schema.define(version: 20131109151623) do
 
-  create_table "bourbon_flavors", force: true do |t|
-    t.integer  "flavor_id"
-    t.integer  "bourbon_whiskey_id"
+  create_table "attribute_types", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+  end
+
+  create_table "attributes", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "attribute_type_id"
   end
 
   create_table "bourbon_whiskeys", force: true do |t|
@@ -28,12 +34,6 @@ ActiveRecord::Schema.define(version: 20131109053246) do
   end
 
   create_table "distilleries", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "flavors", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
