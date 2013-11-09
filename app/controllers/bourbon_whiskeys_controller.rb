@@ -6,11 +6,12 @@ class BourbonWhiskeysController < ApplicationController
   end
 
 	def like
-    
+    @user.likes.vote(params[:id])
     redirect_to root_url
   end
 
   def hate
+    # @user.hate(params[:id])
     redirect_to root_url
   end
 end
