@@ -4,6 +4,9 @@ class BourbonWhiskey < ActiveRecord::Base
   has_many :flavors, through: :bourbon_flavors
 
   def self.random
-    limit(1).order("RANDOM()")
+    # TODO: Set up random properly, avoid active record relation bug
+    # return limit(1).order("RANDOM()")
+    
+    first
   end
 end
