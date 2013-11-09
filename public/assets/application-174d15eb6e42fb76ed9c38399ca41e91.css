@@ -1,0 +1,163 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+html {
+  font: normal 16px/24px "ralewaymedium", sans-serif;
+  background: url("background-19.png") repeat; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "prociono_ttregular", serif;
+  margin: .5em 0; }
+
+.choose > h3 {
+  color: #eaae60;
+  font-family: "ralewayheavy", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2em;
+  background: url("topper.svg") no-repeat center center;
+  background-size: contain;
+  text-indent: -99999px; }
+
+h1 {
+  color: #f8f7d3; }
+
+.info {
+  text-indent: -99999px;
+  background: url("info_button.svg") no-repeat;
+  height: 1.5em;
+  width: 1.5em;
+  float: right; }
+
+.wrapper {
+  margin: 5%;
+  border: 1px solid #f8f7d3;
+  padding: 5%;
+  text-align: center; }
+
+.wrapper li {
+  display: inline-block; }
+
+.bourbon-image {
+  width: 90%;
+  height: 300px;
+  background: url("whiskey_glass.svg") no-repeat center center;
+  background-size: contain;
+  text-indent: -9999px;
+  display: block;
+  margin: 5% auto; }
+
+.vote .option {
+  display: inline-block;
+  width: 20%;
+  text-indent: -99999px; }
+
+.vote .option a {
+  text-decoration: none;
+  font-size: 150%;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+  padding: 5% 0;
+  height: 30px; }
+
+.yes a {
+  background: url("like.svg") no-repeat;
+  background-size: contain;
+  background-position: center center; }
+
+.no a {
+  background: url("dislike.svg") no-repeat;
+  background-size: contain;
+  background-position: center center; }
+
+.skip {
+  display: block;
+  text-align: right;
+  font-family: "prociono_ttregular", serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #421314;
+  font-size: 75%;
+  letter-spacing: .1em; }
+
+.skip a:hover {
+  background: none; }
+
+dt {
+  font: normal 1.5em/1.5em "ralewayheavy", sans-serif;
+  color: #eaae60;
+  text-transform: uppercase;
+  margin: .5em 0; }
+
+dd {
+  border-bottom: solid 1px #f8f7d3;
+  color: #f8f7d3;
+  margin: 0 0 1.5em;
+  padding: 0 0 1em;
+  font-family: "ralewaymedium", sans-serif; }
+
+dd:last-child {
+  border: none; }
+
+.description dt {
+  padding-bottom: 1.5em; }
+
+.description .color {
+  background: url("Color.svg") no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom; }
+
+.description .aroma {
+  background: url("aroma.svg") no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom; }
+
+.description .entry {
+  background: url("body.svg") no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom; }
+
+.description .finish {
+  background: url("Finish.svg") no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom; }
+
+.description .strength {
+  background: url("Strength.svg") no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom; }
+
+.vote {
+  padding-top: 4em;
+  background: url("ornament.svg") no-repeat top center; }
+@font-face {
+  font-family: 'prociono_ttregular';
+  src: url("../fonts/prociono-webfont.eot");
+  src: url("../fonts/prociono-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/prociono-webfont.woff") format("woff"), url("../fonts/prociono-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ralewayheavy';
+  src: url("../fonts/raleway-heavy-webfont.eot");
+  src: url("../fonts/raleway-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-heavy-webfont.woff") format("woff"), url("../fonts/raleway-heavy-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ralewaymedium';
+  src: url("../fonts/raleway-medium-webfont.eot");
+  src: url("../fonts/raleway-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-medium-webfont.woff") format("woff"), url("../fonts/raleway-medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
