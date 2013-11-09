@@ -4,7 +4,7 @@ class BourbonWhiskey < ActiveRecord::Base
   has_many :bourbon_profiles
   has_many :bourbon_attributes, through: :bourbon_profiles
 
-  validates.presence_of :distillery
+  validates :distillery, presence: true
 
   def self.random
     # TODO: Set up random properly, avoid active record relation bug
