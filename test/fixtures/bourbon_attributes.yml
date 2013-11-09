@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bourbon_whiskey_id: 1
+  attribute_id: 1
+
+two:
+  bourbon_whiskey_id: 1
+  attribute_id: 1
