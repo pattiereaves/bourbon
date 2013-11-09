@@ -1,8 +1,8 @@
 class BourbonWhiskey < ActiveRecord::Base
   belongs_to :distillery
   
-  has_many :bourbon_attributes
-  has_many :attributes, through: :bourbon_attributes
+  has_many :bourbon_profiles
+  has_many :bourbon_attributes, through: :bourbon_profiles
 
   def self.random
     # TODO: Set up random properly, avoid active record relation bug
