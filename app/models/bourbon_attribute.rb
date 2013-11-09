@@ -7,5 +7,5 @@ class BourbonAttribute < ActiveRecord::Base
   has_many :likes
   has_many :hates
 
-  validates.presence_of :attribute_type
+  validates :attribute_type, presence: true
 end
