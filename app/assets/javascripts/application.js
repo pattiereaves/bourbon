@@ -14,34 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-
-$(function() {
-  $('.bourbon-info > p').css('display', 'none');
-
-  
-
-
-  $('.info').on("click", function() {
-
-  	if($(this).hasClass('hide')) {
-  		$(this).parent().children('p').css('display','none');
-  		$(this).html('info');
-  		$(this).removeClass("hide");		
-  	} else {
-  		$(this).parent().children('p').css('display','block');
-  		$(this).addClass("hide");
-  		$(this).html('hide');	
-  	}
-  
-
-  });
-
-
-
-
-
-  
-
-});
-

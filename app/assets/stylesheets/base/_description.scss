@@ -1,0 +1,64 @@
+.wrapper.description{
+  @include box-sizing(border-box);
+  float: left;
+  width: 50%;
+}
+
+dt {
+  font: normal 1.5em/1.5em $sansfont;
+  color: $yellow;
+  text-transform: uppercase;
+  margin: .5em 0;
+}
+
+dd {
+  border-bottom: solid 1px $cream;
+  color: $cream;
+  margin: 0 0 1.5em;
+  padding: 0 0 1em;
+  font-family: $sansthin;
+}
+
+dd:last-child {
+  border: none;
+}
+
+.description dt {
+  padding-bottom: 1.5em;
+}
+
+.description .color {
+  background: url(image-path('Color.svg')) no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom;
+}
+
+.description .aroma {
+  background: url(image-path('aroma.svg')) no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom;
+}
+
+.description .entry {
+  background: url(image-path('body.svg')) no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom;
+}
+
+.description .finish {
+  background: url(image-path('Finish.svg')) no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom;
+}
+.description .strength {
+  background: url(image-path('Strength.svg')) no-repeat;
+  background-size: 1em auto;
+  background-position: center bottom;
+}
+
+.back-button{
+  background: url(image-path('back_button.svg')) no-repeat left center;
+  display: block;
+  height: 44px;
+  @include hide-text;
+}

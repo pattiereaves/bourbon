@@ -1,15 +1,9 @@
 <section class="choose wrapper">
 	<h3><span>Try this</span></h3>
 	<div class="bourbon-image">
-		Glass of bourbon
+		Glass of bourbon <a class="info js-show-info">more info</a>
 	</div>
-	<h1><%= @bourbon.name %></h1>
-	<div class="bourbon-info">
-		<a class="info">info</a>
-		<p>
-			<%= @bourbon.appearance %>
-		</p>
-	</div>
+	<h1 class="bourbon-name"><%= @bourbon.name %></h1>
 	<div class="vote">
 		<div class="yes option">
 			<%= link_to "Yes", like_bourbon_whiskey_path(@bourbon), method: "post" %>
@@ -18,7 +12,7 @@
 			<%= link_to "No", hate_bourbon_whiskey_path(@bourbon), method: "post" %>
 		</div>
 		<div class="skip">
-			<%= link_to "skip it", root_path %>
+			<%= link_to "skip it", root_path, class: "skip-link" %>
 		</div>
 	</div><!-- /.yes-->
 
@@ -27,7 +21,8 @@
 
 
 <section class="wrapper description">
-	<h1><%= @bourbon.name %></h1>
+	<a class="back-button">back</a>
+	<h1 class="bourbon-name"><%= @bourbon.name %></h1>
 		<dl>
 <!-- 			<dt class="color">Color</dt>
 			<dd>Deep</dd>

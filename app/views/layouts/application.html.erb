@@ -2,14 +2,22 @@
 <html>
 <head>
   <title>Kentucky Bourbon Finder</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
   <%= stylesheet_link_tag "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+
+<header class="site-header">
+  <h1 class="logo"><%= image_tag "logo.svg", alt: "Kentucky Bourbon Finder" %></h1>
+</header>
+<div class="site-wrapper">
+  <div class="site-inner-wrapper">
+    <%= yield %>
+  </div>
+</div>
 
 </body>
 </html>

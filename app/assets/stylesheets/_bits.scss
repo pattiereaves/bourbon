@@ -7,3 +7,9 @@ $maroon: rgb(66,19,20);
 $sansfont: 'ralewayheavy', sans-serif;
 $sansthin: 'ralewaymedium', sans-serif;
 $seriffont:  'prociono_ttregular', serif;
+
+@mixin hide-text(){
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}

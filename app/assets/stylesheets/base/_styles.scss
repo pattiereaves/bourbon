@@ -1,0 +1,145 @@
+body {
+  font: normal 16px/24px $sansthin;
+  background:#000 url(image-path('background-19.png')) repeat center center;
+  background-size: 310px 310px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+
+  &:after, &:before{
+    display: table;
+  }
+  &:after{
+    clear:both;
+  }
+}
+
+.site-wrapper{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.site-inner-wrapper{
+  left: 0;
+  position: relative;
+  @include transition(left .4s ease-in-out);
+  @include transform(rotate3d(0,0,0, 0deg));
+  width: 200%;
+
+  &.is-showing-description{
+    left: -100%;
+  }
+}
+
+ h1,h2,h3,h4,h5,h6 { 
+  font-family: $seriffont;
+  margin: .5em 0;
+ }
+
+.choose > h3 {
+  color: $yellow;
+  font-family: $sansfont;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2em;
+  background: url(image-path('topper.svg')) no-repeat center center;
+  background-size: contain;
+  text-indent: -99999px;
+}
+
+h1 {
+  color: $cream;
+}
+
+.bourbon-name{
+  line-height: 1.4;
+  min-height: 2.8em;
+}
+
+.info {
+  text-indent: -99999px;
+  background: url(image-path('info_button.svg')) no-repeat;
+  height: 1.5em;
+  width: 1.5em;
+  float: right;
+}
+
+.wrapper {
+  // margin: 5%;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+.skip-link{
+  color: $maroon;
+}
+
+.wrapper li {display: inline-block;}
+
+.bourbon-image {
+  width: 90%;
+  height: 135px;
+  background: url(image-path('whiskey_glass.svg')) no-repeat center center;
+  background-size: contain;
+  text-indent: -9999px; 
+  display: block;
+  margin: 5% auto;
+}
+
+.vote .option {
+  display: inline-block;
+  width: 72px;
+  text-indent: -99999px;
+  margin-right: 8px;
+}
+
+.vote .yes {
+  
+}
+
+.vote .option a {
+  text-decoration: none; 
+  font-size: 150%;
+  font-weight: bold;
+  width: 72px;
+  display: block;
+  padding: 5% 0;
+  height: 44px;
+}
+.yes a {
+  background: url(image-path('like.svg')) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  }
+
+.no a {
+background: url(image-path('dislike.svg')) no-repeat ;
+background-size: contain;
+background-position: center center;
+}
+
+.skip {
+  text-align: center;
+  font-family: $seriffont;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: $maroon;
+  font-size: 75%;
+  letter-spacing: .1em;
+}
+.skip a:hover {background: none;}
+
+.vote {
+  padding-top: 4em;
+  background: url(image-path('ornament.svg')) no-repeat top center;
+}
+
+
+.choose.wrapper{
+  @include box-sizing(border-box);
+  float: left;
+  width: 50%;
+}
