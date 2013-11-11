@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Bourbon::Application.config.secret_key_base = '185d159c0ffee1e171f5657d678b0ac6e1556d50ed061b1dee126a5dae0a7371d81e29931a6bfdb8f43669d7c36b1ded833a80d70c69c204e0053d80f8a63799'
+BourbonApp::Application.config.secret_key_base = '185d159c0ffee1e171f5657d678b0ac6e1556d50ed061b1dee126a5dae0a7371d81e29931a6bfdb8f43669d7c36b1ded833a80d70c69c204e0053d80f8a63799'

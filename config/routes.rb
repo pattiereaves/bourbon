@@ -1,4 +1,4 @@
-Bourbon::Application.routes.draw do
+BourbonApp::Application.routes.draw do
   resources :bourbon_whiskeys, only: [:index, :show, :edit] do
     member do
       post "like"
