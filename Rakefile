@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Bourbon::Application.load_tasks
+BourbonApp::Application.load_tasks
